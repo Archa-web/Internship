@@ -1,3 +1,4 @@
+
 # Storing string in variable
 name = "Archa"
 print(name)
@@ -33,7 +34,27 @@ print(b)
 print(c)
 
 # Assign different data type values to multiple variables
-name, age, email = "Archa", 25, "archa@gmail.com"
+name, age, email = "Archa", 25, "achu@gmail.com"
 print(name)
 print(age)
 print(email)
+
+# Swapping
+a = "Archa"
+b = "Vichu"
+print(a)
+print(b)
+
+print("After swapping------------------------")
+# Method 1.
+temp = a
+a = b
+b = temp
+print("temp------>",temp)
+print("a--------->",a)
+print("b--------->",b)
+
+# Method 2.
+a, b = b, a
+print(a)
+print(b)
