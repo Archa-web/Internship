@@ -22,7 +22,7 @@ print(21,45,2,78)
 # we can use any string as separator
 # we can use single quotes or double quotes for sep value
 print("Archa","loves","coding", sep="-")
-print(22,23,24,sep=":::")
+print(22, 23, 24, sep=":::")
 
 # printing without new line
 # end => To add end by our own
