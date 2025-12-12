@@ -486,16 +486,18 @@ slice_str = "pythonprogramming"
 substring1 = slice_str[0:5] # 'pytho'
 print("Substring from index 0 to 5: ",substring1)
 
-substring_default_start = slice_str[:6] # 'pytho'
+substring_default_start = slice_str[:6] # 'python'
 print("Substring from start to index 6: ",substring_default_start)
 
-substring_default_end = slice_str[6:] # 'pytho'
+substring_default_end = slice_str[6:] # 'programming'
 print("Substring from index 6 to end: ",substring_default_end)
 
-substring_default_start_and_end = slice_str[:]
+substring_default_start_and_end = slice_str[:] # 'python programming'
 print("Substring with default start and end: ",substring_default_start_and_end)
 
-
+#extracting substring using negative indexing
+substring2 = slice_str[-4:-1]   # 'min'
+print("Substring from index -4 to -1 :", substring2)
 
 # Concatenation
 # Concatenation is the process of joining two or more strings into a single string
