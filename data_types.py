@@ -295,7 +295,7 @@ print(last_char)   #n
 print(sample_str[-1]) #n
 print(sample_str[-3]) #h
 print(sample_str[-6]) #P
-print(sample_str[-7]) # IndexError
+# print(sample_str[-7]) # IndexError
 
 #-1 refers to last character
 first_char_neg = sample_str[-6]
@@ -401,13 +401,14 @@ print(special_str2.islower()) #True (numbers and special characters are ignored)
 
 
 #isspace() method
+# Checks if string contains only whitespace  
 space_str = "   "
 non_space_str = " Hello "
 empty_str = ""
 print(space_str.isspace()) #True
 print(non_space_str.isspace()) #False
 print(empty_str.isspace()) #False
-print(" \t\n".isspace()) #True (contains only whitespace characters)
+print("     \t\n".isspace()) #True (contains only whitespace characters)
 
 # 6. Splitting and joining strings
 
@@ -471,3 +472,68 @@ print("Occurrences of 'java:", java_count)
 #count occurences of 's' 
 s_count = count_str.count("s")    #3
 print("Occurrences of 's:", s_count)
+
+
+# VVIP
+# slicing strings
+# slicing allows us to extract a portion of a string using indexing
+# last index is not included
+# default start is 0 and default end is length of string
+# syntax : string_name[start : end]
+
+slice_str = "pythonprogramming"
+# Extracting substring from index 0 to 5 (not including 5)
+substring1 = slice_str[0:5] # 'pytho'
+print("Substring from index 0 to 5: ",substring1)
+
+substring_default_start = slice_str[:6] # 'pytho'
+print("Substring from start to index 6: ",substring_default_start)
+
+substring_default_end = slice_str[6:] # 'pytho'
+print("Substring from index 6 to end: ",substring_default_end)
+
+substring_default_start_and_end = slice_str[:]
+print("Substring with default start and end: ",substring_default_start_and_end)
+
+
+
+# Concatenation
+# Concatenation is the process of joining two or more strings into a single string
+# It is done using the + operator 
+str1 = "Hello"
+str2 = "World"
+concatenated_str = str1 + " " + str2
+print("Concatenated string: ", concatenated_str)
+
+# Repetition
+# Repitition is the process of creating a new string by repeating an existing string multiple times
+# It is done using the * operator
+repeated_str = str1 * 3
+print("Repeated string:", repeated_str)
+
+# String with numbers
+age = 25
+# This will give error : VIMP
+# message = "Age is " + age # Error ->Type Error can't add string and int
+# print(message)
+
+# Solution 1 : Convert number to string
+message = "Age is " + str(age)
+print(message)
+
+# Solution 2 : Use comma in print
+print("Age is", age)
+
+# Solution 3 : f-strings 
+message = f"Age is {age} {30} {25} {str(age)}"
+print(message)
+
+name = "Archa"
+mobile_number = "1234567890"
+# Example: Using f-string to create an email template
+email_body = f"""
+Hi, {name}
+We are conducting a survey for you.
+Kindly confirm your mobile number : {mobile_number}
+"""
+print(email_body)
