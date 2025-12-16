@@ -443,9 +443,9 @@ print("Joined string:", joined_str_comma)
 # This is case-sensitive
 test_str = "Hello, welcome to python programming."
 # Check if the string starts with "Hello"
-starts_with_hello = test_str.startswith("Hello")    #hello will return False
+starts_with_hello = test_str.startswith("hello")    #hello will return False
 print("Starts with 'Hello':", starts_with_hello)
-starts_with_helloji = test_str.startswith("Helloji")    #hello will return False
+starts_with_helloji = test_str.startswith("Helloji")    #Helloji will return False
 print("Starts with 'Helloji':", starts_with_helloji)
 
 # Checks if the string ends with "programming."
@@ -532,7 +532,7 @@ print(message)
 
 name = "Archa"
 mobile_number = "1234567890"
-# Example: Using f-string to create an email template
+# Example: Using f-string to create an email template ho
 email_body = f"""
 Hi, {name}
 We are conducting a survey for you.
