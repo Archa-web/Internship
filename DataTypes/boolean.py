@@ -132,10 +132,31 @@ else:
     print("Show login page") 
 
 
-name = rcha
+# HOMEWORK 
+
+admin = 101
+hr = 102
+employee1 = 103
+employee2 = 104
+
+if  admin == 101 or hr == 102:
+    print("Welcome Admin/HR")
+elif employee1 == 103 or employee2 == 104:
+    print("Welcome Employee")
+
+# Comparison with string
+
+name = "rcha"
 if name == "archa":
     print("Welcome admin")
 else:
     print("Welcome User")
 
-    
+name = "rcha"
+if name != "archa":
+    print("Welcome admin")
+else:
+    print("Welcome User")
+
+# how with works with <, >, <=, >=
+
