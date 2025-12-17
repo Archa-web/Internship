@@ -130,3 +130,12 @@ if logged_in:
     print("Show dashboard")
 else:
     print("Show login page") 
+
+
+name = rcha
+if name == "archa":
+    print("Welcome admin")
+else:
+    print("Welcome User")
+
+    
