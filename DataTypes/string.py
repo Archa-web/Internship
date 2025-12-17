@@ -298,3 +298,11 @@ We are conducting a survey for you.
 Kindly confirm your mobile number : {mobile_number}
 """
 print(email_body)
+
+
+# Immutability of strings
+
+# Strings are immutable, meaning once created, their content cannot be changed
+
+original_str = "Hello, World!"
+# original_str[0] = "h"  # TypeError: 'str' object does not support item assignment
