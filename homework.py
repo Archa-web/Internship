@@ -51,3 +51,18 @@ else:
     
 
 # how with works with <, >, <=, >=
+
+name1 = "alice"
+name2 = "bob"
+if name1 <= name2:
+    print(f"{name1} comes before {name2} alphabetically")
+else:
+    print(f"{name2} comes before {name1} alphabetically")
+
+name11 = "Charlie"
+name22 = "bob"
+if name11 < name22:
+    print(f"{name11} comes after {name22} alphabetically")
+else:
+    print(f"{name22} comes after {name11} alphabetically")
+
