@@ -1,4 +1,6 @@
-# TUPLE (tuple) DATA TYPE IN PYTHON
+
+
+# ----------- TUPLE (tuple) DATA TYPE IN PYTHON -------------- #
 
 """
 NOTES:
@@ -23,6 +25,11 @@ print(mixed_tuple)
 
 # Check data type
 print(type(numbers))      # <class 'tuple'>
+
+
+
+
+
 
 # --------------- SINGLE ELEMENT TUPLE VVIMP --------------- #
 
@@ -51,6 +58,8 @@ print(type(single_tuple2))    # <class 'tuple'>
 
 
 
+
+
 # --------------- TUPLE WITHOUT PARENTHESIS --------------- #
 
 """
@@ -70,6 +79,10 @@ single_packed = 5,
 print(single_packed)          # (5,)
 print(type(single_packed))    # <class 'tuple'>
 
+
+
+
+
 # --------------- EMPTY TUPLE --------------- #
 """
 Notes:
@@ -81,6 +94,9 @@ empty_tuple = ()
 print(empty_tuple)
 print(type(empty_tuple))    # <class 'tuple'>
 print(len(empty_tuple))   # 0
+
+
+
 
 
 # ------------- TUPLE INDEXING -------------- #
@@ -105,6 +121,10 @@ print(sample_tuple[-3])   # c
 # print(sample_tuple[5])    # IndexError
 # print(sample_tuple[-6])   # IndexError
 
+
+
+
+
 # ----------------- LENGTH OF TUPLE ----------------- #
 
 """
@@ -118,6 +138,9 @@ print("Length of tuple = ",len(my_tuple))    # 6
 
 duplicate_tuple = (1, 2, 2, 3, 4, 4, 4)
 print("Length of duplicate tuple = ",len(duplicate_tuple))    # 7
+
+
+
 
 
 # ----------------- TUPLE SLICING ----------------- #
@@ -148,6 +171,10 @@ print(new_tuple[-5:-2])  # (50, 60, 70)
 print(new_tuple[::-1])    # (90, 80, 70, 60, 50, 40, 30, 20, 10)
 print(new_tuple[7:4:-1]) # (80, 70, 60)
 
+
+
+
+
 # ---------------- TUPLE IS IMMUTABLE ---------------- #
 
 """
@@ -167,6 +194,10 @@ print("Original tuple:", immutable_tuple)
 # cannot modify element
 # immutable_tuple[0] = 10  # TypeError: 'tuple' object does not support item assignment
 print("Cannot modify elements of tuple")
+
+
+
+
 
 # ---------------- TUPLE WITH MUTABLE ELEMENTS VVIMP ---------------- #
 
@@ -188,6 +219,9 @@ print("After modification:", tuple_with_list)   # (1, 2, [3, 4, 5])
 # Modifying the mutable element (list) inside the tuple
 tuple_with_list[2][1] = 30
 print("After modification:", tuple_with_list)   # (1, 2, [30, 4, 5])
+
+
+
 
 
 
@@ -217,5 +251,4 @@ l1 = l1 + l2
 print("concatenated list: l1 + l2", l1) # [1, 2, 3, 4, 5, 6]
 print("original l1:", l1) # [1, 2, 3, 4, 5, 6]
 print("original l2:", l2) # [4, 5, 6]
-
 """
