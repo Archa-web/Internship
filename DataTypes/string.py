@@ -1,6 +1,6 @@
 
-#String Data Type (str)
-#Strings are sequences of characters enclosed in single quotes(' '), double quotes(" "), or triple
+# String Data Type (str)
+# Strings are sequences of characters enclosed in single quotes(' '), double quotes(" "), or triple
 empty_string = ""
 
 #multi line string using triple quotes
@@ -95,7 +95,7 @@ print(leading_stripped) #"Hello, Python!   " without leading spaces
 trailing_stripped = text_with_spaces.rstrip()
 print(trailing_stripped) #"   Hello, Python!" without trailing spaces   
 
-# 3. Inding substrings
+# 3. Finding substrings
 main_str = "Hello, Hello welcome to Python programming."
 #finding first occurrence of substring
 #case-sensitive
@@ -107,10 +107,10 @@ index_not_found = main_str.find("Java")
 print(index_not_found) #-1
 
 # 4. Replacing substrings
-#it need 2 parameters: old substring and new substring
-#replacing all occurrences of a substring with another substring
+# it need 2 parameters: old substring and new substring
+# replacing all occurrences of a substring with another substring
 original_str = "I like apples. Apples are my favorite fruit."
-#case-sensitive
+# case-sensitive
 new_str = original_str.replace("apples", "oranges")
 print(new_str) #"I like oranges. Apples are my favorite fruit."
 

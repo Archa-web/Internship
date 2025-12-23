@@ -66,3 +66,13 @@ if name11 < name22:
 else:
     print(f"{name22} comes after {name11} alphabetically")
 
+
+
+# homework
+# create a tuple with different data types and perform all types of built-in operations on it.
+
+
+# why tuple is faster than list?
+# Because tuples are immutable, Python can optimize their storage and access.
+
+

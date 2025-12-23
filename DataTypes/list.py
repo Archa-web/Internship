@@ -173,6 +173,9 @@ Notes:
 - pop() : removes and returns the last element of the list.
 - pop(index) : removes and returns the element at the specified index.
 - clear() : removes all elements from the list.
+- del keyword to delete entire list or a portion of the list using slicing
+- if we try to remove an item not in the list using remove(), it gives ValueError
+
 """
 
 # 3.1 remove() method
@@ -187,19 +190,35 @@ print(names)   # ['Alice', 'Charlie', 'Bob']
 # 3.2 pop() method
 
 # pop() without index
+# - removes last element
 fruits = ["apple", "banana", "cherry"]
 last_fruit = fruits.pop()
 print("Removed = ",last_fruit)   # cherry
 print(fruits)   # ['apple', 'banana']
 
 # pop() with index
+# - removes element at specified index
 first_fruit = fruits.pop(0)
 print("Removed = ",first_fruit)   # apple
 print(fruits)   # ['banana']
 
 # 3.3 clear() method
+# clears the entire list
 fruits.clear()
 print(fruits)   # []
+
+# 3.4 Using del keyword
+
+# del keyword to delete entire list
+# permanently deletes the list
+# del slicing to delete a portion of the list
+
+colors = ["red", "green", "blue", "yellow", "purple"]
+del colors[1:4]
+print(colors)  #['red', 'purple']
+
+del colors
+# print(colors)  # gives NameError as colors is deleted
 
 
 # 4. ------------------ SORTING A LIST ------------------ #
@@ -227,6 +246,7 @@ print("Descending order:", numbers)  # [50, 40, 30, 20, 10]
 # 5 -------------- REVERSING A LIST --------------- #
 
 # REVERSING A LIST USING reverse() METHOD
+
 """
 Notes:
 - reverse() method reverses the order of elements in the list.
@@ -237,3 +257,124 @@ chars = ['a', 'b', 'c', 'd', 'e']
 chars.reverse()
 print("Reversed list:", chars)   # ['e', 'd', 'c', 'b', 'a']
 
+
+
+
+# 6. --------------- COPYING A LIST --------------- #
+
+# COPYING A LIST USING ASSIGNMENT AND copy() METHOD
+
+"""
+Notes:
+- copy() method creates a shallow copy of the list.
+- Assignment creates a reference to the same list.
+"""
+
+a = [1, 2, 3]
+b = a
+b.append(4)
+print("a:", a)  # [1, 2, 3, 4] both a and b refer to same list
+print("b:", b)  # [1, 2, 3, 4]   
+
+c = a.copy()
+c.append(5)
+print("a:", a)  # [1, 2, 3, 4]
+print("c:", c)  # [1, 2, 3, 4, 5] c is a separate copy
+
+# change in copy does not affect original list
+
+
+#homework 
+#what is shallow copy vs deep copy
+#what is reference vs copy
+#list comprehenshion
+#how range works
+#anyother built in functions
+
+
+#list concatenation
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+combined = list1 + list2
+print(combined)  #[1, 2, 3, 4, 5, 6]
+
+#list repetition
+repeated = list1 * 3
+print(repeated)  #[1, 2, 3, 1, 2, 3, 1, 2, 3]
+
+
+
+#bucket 7
+#count and index methods
+
+numbers = [1, 2, 3, 2, 4, 2, 5]
+
+print(numbers.count(2))  #3 (counts occurrences of 2)
+
+print(numbers.index(4))  #4 (index of first occurrence of 4)
+
+
+#checkiing elemeent inside list, membership operators
+fruits = ["apple", "banana", "cherry"]
+print("banana" in fruits)   #True
+print("grape" not in fruits) #True
+print("grape" in fruits)    #False
+print("apple" not in fruits)  #False
+
+
+
+#nested lists
+matrix = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+]
+
+print(matrix)
+print(matrix[0])      #[1, 2, 3] first row
+print(matrix[1][2])   #6 element at row 1, column 2
+
+
+#list comprehension
+
+squares = [i * i for i in range(1, 6)]
+print(squares)  #[1, 4, 9, 16, 25]
+
+even_numbers = [i for i in range(1, 11) if i % 2 == 0]
+print(even_numbers)  #[2, 4, 6, 8, 10]
+
+
+#type conversion to list
+
+
+#bucket 
+
+#built-in functions with lists
+2
+numbers = [10, 20, 5, 15]
+print(sum(numbers))   #50
+print(min(numbers))   #5
+print(max(numbers))   #20
+print(len(numbers))   #4
+
+
+#bucket
+
+#any() and all()
+num = [0, 1, 2, 3]
+print(any(num))  #True (at least one non-zero)
+print(all(num))  #False (not all non-zero)
+print(all(i % 2 == 0 for i in num))  #False (not all even)
+print(any(i > 2 for i in num))  #True (at least one greater than 2)
+
+
+#real world examples of lists
+mark = [85, 90, 78, 92, 88]  #marks of a student in different subjects
+total_marks = sum(mark)
+average = total_marks / len(mark)
+print("Total Marks:", total_marks)    #Total Marks: 433
+print("Average Marks:", average)      #Average Marks: 86.6
+
+cart = ["apple", "banana", "orange"]
+cart.append("grape")
+print("Shopping Cart:", cart)  #Shopping Cart: ['apple', 'banana', 'orange', 'grape']

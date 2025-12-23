@@ -41,7 +41,7 @@ print(a % b)  # 1
 #Power (Exponent)
 print(a ** b) # 10 ** 3 = 1000
 
-#Comparison Operations
+# Comparison Operations
 x = 10
 y = 20
 print(x == y)  #Equal to
@@ -65,14 +65,14 @@ s2 = "-7"
 print(int(s1)) #25
 print(int(s2)) #-7
 
-#invalid string to int
+# invalid string to int
 s3 = "Hello"
 # print(int(s3)) #ValueError: invalid literal for int() with base 10
 a="10.5"
 # print(int(a)) #ValueError: invalid literal for int() with base 10
 
-#FLOAT
-#Numbers with decimal point
+# FLOAT
+# Numbers with decimal point
 x = 10.5
 y = -3.14
 z = 0.0
@@ -131,12 +131,12 @@ s3 = "World"
 s4 = "156abc"
 # print(float(s4)) #ValueError: could not convert string to float: '15.6abc'
 
-#built-in functions for floats
+# built-in functions for floats
 pi = 3.14159
-print(round(pi))      #Rounds to nearest integer
-print(round(pi, 2))   #Rounds to 2 decimal places
+print(round(pi))      # Rounds to nearest integer
+print(round(pi, 2))   # Rounds to 2 decimal places
 
-#precision issues
+# precision issues
 a = 0.1 + 0.2
 print(a)              #0.30000000000000004
 print(round(a, 2))  #0.3    
