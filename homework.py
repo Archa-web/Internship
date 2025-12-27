@@ -71,8 +71,32 @@ else:
 # homework
 # create a tuple with different data types and perform all types of built-in operations on it.
 
+tuple1 = (1, 2.5, "hello", True, (3, 4), [5, 6], {"key": "value"})
+
+# built-in operations
+print("Original Tuple:", tuple1)
+
+# length
+print("Length of Tuple:", len(tuple1))
+
+# indexing
+print("Accessing Elements:")
+print("First Element:", tuple1[0])
+print("Last Element:", tuple1[-1])
+
+# slicing
+print("Slicing Tuple:", tuple1[1:4])
+print("Stepping:", tuple1[::2])
+
+# concatenation
+print("Concatenation:", tuple1 + (7, 8, 9))
+
+# repetition
+print("Repetition:", tuple1 * 2)
+
+
 
 # why tuple is faster than list?
 # Because tuples are immutable, Python can optimize their storage and access.
-
+# list is mutable.
 

@@ -93,7 +93,7 @@ Notes:
 empty_tuple = ()
 print(empty_tuple)
 print(type(empty_tuple))    # <class 'tuple'>
-print(len(empty_tuple))   # 0
+print(len(empty_tuple))     # 0
 
 
 
@@ -213,8 +213,11 @@ print("Before modification:", tuple_with_list)  # (1, 2, [3, 4])
 # Cannot modify elements of tuple
 # tuple_with_list[0] = 10  # TypeError: 'tuple' object does not support item assignment
 
+# using append will add the element at the end.
+
 tuple_with_list[2].append(5)
 print("After modification:", tuple_with_list)   # (1, 2, [3, 4, 5])
+
 
 # Modifying the mutable element (list) inside the tuple
 tuple_with_list[2][1] = 30
