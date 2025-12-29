@@ -69,7 +69,7 @@ print(int(s2)) #-7
 s3 = "Hello"
 # print(int(s3)) #ValueError: invalid literal for int() with base 10
 a="10.5"
-# print(int(a)) #ValueError: invalid literal for int() with base 10
+# print(int(a))  #ValueError: invalid literal for int() with base 10
 
 # FLOAT
 # Numbers with decimal point
@@ -139,4 +139,4 @@ print(round(pi, 2))   # Rounds to 2 decimal places
 # precision issues
 a = 0.1 + 0.2
 print(a)              #0.30000000000000004
-print(round(a, 2))  #0.3    
+print(round(a, 2))    #0.3    
