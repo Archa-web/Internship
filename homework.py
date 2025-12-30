@@ -70,6 +70,7 @@ else:
 
 # homework
 # create a tuple with different data types and perform all types of built-in operations on it.
+# --------------------------------------------------------------------------------------------- #
 
 tuple1 = (1, 2.5, "hello", True, (3, 4), [5, 6], {"key": "value"})
 
@@ -97,6 +98,7 @@ print("Repetition:", tuple1 * 2)
 
 
 # why tuple is faster than list?
+# -------------------------------------------------------- #
 # Because tuples are immutable, Python can optimize their storage and access.
 # list is mutable.
 
@@ -104,4 +106,20 @@ print("Repetition:", tuple1 * 2)
 
 # Homework 
 # what is frozenset in python? explain with example.
+# -------------------------------------------------------- #
+# A frozenset is an immutable version of a set in Python.
+# Once created, its elements cannot be changed, added, or removed.
+# Example of frozenset
+frozen_set1 = frozenset([1, 2, 3, 4, 5])
+print("Frozenset:", frozen_set1)        # Output: Frozenset: frozenset({1, 2, 3, 4, 5})
+print("Type of frozen_set1:", type(frozen_set1))  # Output: <class 'frozenset'
+
+# incorrect operations on frozenset
+# frozen_set1.add(6)  # AttributeError: 'frozenset' object has no attribute 'add'
+
+
 # what is difference between set and frozenset in python?
+# -------------------------------------------------------- #
+# The main difference between set and frozenset is mutability.
+# A set is mutable, meaning you can add or remove elements after its creation.
+# A frozenset is immutable, meaning once it is created, its elements cannot be changed.
