@@ -100,3 +100,8 @@ print("Repetition:", tuple1 * 2)
 # Because tuples are immutable, Python can optimize their storage and access.
 # list is mutable.
 
+
+
+# Homework 
+# what is frozenset in python? explain with example.
+# what is difference between set and frozenset in python?
