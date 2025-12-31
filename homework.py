@@ -123,3 +123,32 @@ print("Type of frozen_set1:", type(frozen_set1))  # Output: <class 'frozenset'
 # The main difference between set and frozenset is mutability.
 # A set is mutable, meaning you can add or remove elements after its creation.
 # A frozenset is immutable, meaning once it is created, its elements cannot be changed.
+
+
+
+# What is difference between hashable value and non-hashable value in python? explain with example.
+# -------------------------------------------------------------------------------------------------- #
+
+# A hashable value is an object that has a hash value that remains constant during its lifetime.
+# Hashable objects can be used as keys in dictionaries and elements in sets.
+# Examples of hashable values: int, float, string, tuple (if all elements are hashable)
+hashable_value = (1, 2, 3)
+print("Hashable value:", hashable_value)                # 
+print("Type of hashable value:", type(hashable_value))
+
+# A non-hashable value is an object that does not have a constant hash value.
+# Non-hashable objects cannot be used as keys in dictionaries or elements in sets.
+# Examples of non-hashable values: list, set, dictionary
+non_hashable_value = [1, 2, 3]
+print("Non-hashable value:", non_hashable_value)
+print("Type of non-hashable value:", type(non_hashable_value))
+
+
+
+# Operators studied
+
+# assignment operators
+# arithmetic operators
+# comparison operators
+# logical operators
+# membership operators
