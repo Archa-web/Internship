@@ -118,8 +118,8 @@ print("Cannot add mutable elements like lists or sets inside sets")
 #==================================================================================
 """
 NOTES:
-- add() adds single element to the set
-- update() adds multiple elements from iterable
+- add() - adds single element to the set
+- update() - adds multiple elements from iterable
 - If element already exists, set remains unchanged (no duplicates)
 """
 
@@ -186,8 +186,8 @@ print("Set after clear():", temp_set)       # set()
 # Using del - deletes entire set
 del_set = {1, 2, 3}
 del del_set
-# print(del_set)  # NameError: name 'del_set' is not defined
-print("Set deleted using del")              # NameError if accessed
+# print(del_set)                             # NameError: name 'del_set' is not defined
+print("Set deleted using del")              
 
 
 

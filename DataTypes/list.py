@@ -211,6 +211,7 @@ print(fruits)   # []
 
 # del keyword to delete entire list
 # permanently deletes the list
+# syntax: del list_name[index]  to delete element at index
 # del slicing to delete a portion of the list
 
 colors = ["red", "green", "blue", "yellow", "purple"]
