@@ -253,31 +253,31 @@ NOTES:
 """
 
 sample = {"name": "Alice", "age": 20, "grade": "A", "city": "Boston"}
-print("\nSample dictionary:", sample)
+print("\nSample dictionary:", sample)                   # {'name': 'Alice', 'age': 20, 'grade': 'A', 'city': 'Boston'}
 
 # keys() method
-print("\nAll keys:", sample.keys())
-print("Keys as list:", list(sample.keys()))
+print("\nAll keys:", sample.keys())                     # dict_keys(['name', 'age', 'grade', 'city'])
+print("Keys as list:", list(sample.keys()))             # ['name', 'age', 'grade', 'city']
 
 # values() method
-print("\nAll values:", sample.values())
-print("Values as list:", list(sample.values()))
+print("\nAll values:", sample.values())                 # dict_values(['Alice', 20, 'A', 'Boston'])
+print("Values as list:", list(sample.values()))         # ['Alice', 20, 'A', 'Boston']
 
 # items() method
-print("\nAll items:", sample.items())
-print("Items as list:", list(sample.items()))
+print("\nAll items:", sample.items())                   # dict_items([('name', 'Alice'), ('age', 20), ('grade', 'A'), ('city', 'Boston')])
+print("Items as list:", list(sample.items()))           # [('name', 'Alice'), ('age', 20), ('grade', 'A'), ('city', 'Boston')]
 
 # get() method
-print("\nget('name'):", sample.get("name"))
-print("get('phone', 'N/A'):", sample.get("phone", "N/A"))
+print("\nget('name'):", sample.get("name"))                     # Alice
+print("get('phone', 'N/A'):", sample.get("phone", "N/A"))       # N/A
 
 # update() method - merge dictionaries
-sample.update({"phone": "123-456", "email": "alice@example.com"})
-print("\nAfter update():", sample)
+sample.update({"phone": "123-456", "email": "alice@example.com"})      
+print("\nAfter update():", sample)    # {'name': 'Alice', 'age': 20, 'grade': 'A', 'city': 'Boston', 'phone': '123-456', 'email': 'alice@example.com'}
 
 # update() can also modify existing keys
 sample.update({"age": 21})
-print("After updating age:", sample)
+print("After updating age:", sample)    # {'name': 'Alice', 'age': 21, 'grade': 'A', 'city': 'Boston', 'phone': '123-456', 'email': 'alice@example.com'}
 
 # setdefault() method
 # print("\nUsing setdefault():")
@@ -304,22 +304,22 @@ student = {"name": "Alice", "age": 20, "grade": "A", "city": "Boston"}
 # Iterating over keys (default)
 print("\nIterating over keys:")
 for key in student:
-    print(key)
+    print(key)                      # name, age, grade, city
 
 # Explicitly using keys()
 print("\nUsing keys():")
 for key in student.keys():
-    print(key)
+    print(key)                      # name, age, grade, city  
 
 # Iterating over values
 print("\nIterating over values:")
 for value in student.values():
-    print(value)
+    print(value)                    # Alice, 20, A, Boston
 
 # Iterating over items (key-value pairs)
 print("\nIterating over items:")
 for key, value in student.items():
-    print(f"{key}: {value}")
+    print(f"{key}: {value}")        # name: Alice, age: 20, grade: A, city: Boston
 
 # Using enumerate with items
 # print("\nUsing enumerate with items:")
@@ -418,7 +418,7 @@ print("\nAll students:")
 for student_id, info in students.items():
     print(f"{student_id}:")
     for key, value in info.items():
-        print(f"  {key}: {value}")
+        print(f"  {key}: {value}")         
 
 # Modifying nested dictionary
 students["student1"]["age"] = 21
@@ -628,26 +628,28 @@ NOTES:
 - Use items() with key parameter for custom sorting
 """
 
-scores = {"Alice": 85, "Bob": 92, "Charlie": 78, "David": 95}
+scores = {"Alice": 85, "Bob": 92, "David": 95, "Charlie": 78}
 print("\nOriginal scores:", scores)
 
 # Sort by keys
 sorted_keys = sorted(scores.keys())
 print("Sorted keys:", sorted_keys)
-sorted_dict_by_keys = {k: scores[k] for k in sorted_keys}
-print("Dict sorted by keys:", sorted_dict_by_keys)
+
+
+# sorted_dict_by_keys = {k: scores[k] for k in sorted_keys}
+# print("Dict sorted by keys:", sorted_dict_by_keys)
 
 # Sort by values
-sorted_by_values = dict(sorted(scores.items(), key=lambda item: item[1]))
-print("Dict sorted by values:", sorted_by_values)
+# sorted_by_values = dict(sorted(scores.items(), key=lambda item: item[1]))
+# print("Dict sorted by values:", sorted_by_values)
 
 # Sort by values (descending)
-sorted_desc = dict(sorted(scores.items(), key=lambda item: item[1], reverse=True))
-print("Dict sorted by values (descending):", sorted_desc)
+# sorted_desc = dict(sorted(scores.items(), key=lambda item: item[1], reverse=True))
+# print("Dict sorted by values (descending):", sorted_desc)
 
 # Using sorted() with dictionary comprehension
-sorted_dict = {k: v for k, v in sorted(scores.items(), key=lambda item: item[1], reverse=True)}
-print("Using comprehension:", sorted_dict)
+# sorted_dict = {k: v for k, v in sorted(scores.items(), key=lambda item: item[1], reverse=True)}
+# print("Using comprehension:", sorted_dict)
 
 #==================================================================================
 # BUILT-IN FUNCTIONS WITH DICTIONARIES
