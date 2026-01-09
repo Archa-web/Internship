@@ -510,28 +510,31 @@ while attempts < max_attempts:
 #==================================================================================
 """
 NOTES:
-- continue skips current iteration
+- Continue skips current iteration
 - Moves to next iteration immediately
 - Remaining code in loop is skipped for that iteration
 """
 
-# continue in for loop
+# continue in for loop 
+# printing odd numbers
 print("\nPrinting odd numbers (1-10):")
 for i in range(1, 11):
     if i % 2 == 0:
         continue  # Skip even numbers
-    print(i)
+    print(i)                    # 1, 3, 5, 7, 9
 
-# Another example
+# Another example 
+# skipping specific item
 print("\nSkipping 'banana':")
 fruits = ["apple", "banana", "cherry", "date"]
 
 for fruit in fruits:
     if fruit == "banana":
         continue
-    print(fruit)
+    print(fruit)                # apple, cherry, date
 
-# continue in while loop
+# continue in while loop 
+# printing numbers except multiples of 3
 print("\nPrinting numbers except multiples of 3:")
 number = 0
 
@@ -539,16 +542,17 @@ while number < 10:
     number += 1
     if number % 3 == 0:
         continue
-    print(number)
+    print(number)               # 1, 2, 4, 5, 7, 8, 10
 
-# Practical example
+# Practical example 
+# printing only positive numbers
 print("\nProcessing positive numbers only:")
 numbers = [5, -3, 8, -1, 10, -7, 15]
 
 for num in numbers:
     if num < 0:
         continue
-    print(f"Processing: {num}")
+    print(f"Processing: {num}")         # 5, 8, 10, 15
 
 #==================================================================================
 # PASS STATEMENT
@@ -600,7 +604,16 @@ NOTES:
 - Inner loop completes fully for each iteration of outer loop
 """
 
+
+
 # Basic nested for loop
+# example 1:
+print("\n i and j nested loops:")
+for i in range(1, 4):
+    for j in range(1, 4):
+        print(f"i={i}, j={j}")
+    print()  # Blank line after each i
+
 print("\nMultiplication table:")
 for i in range(1, 4):
     for j in range(1, 4):
@@ -651,6 +664,26 @@ for num in numbers:
         break
 else:
     print("7 not found in list")
+
+# if no break occurs 
+# then else executes
+print("\nIterating through list with else:")
+list1 =["alice", "bob", "charlie"]
+for i in list1:
+    print(i)
+else:
+    print("done")
+
+# if break occurs
+# then else is skipped
+print("\nIterating through list with break:")
+list1 =["alice", "bob", "charlie"]
+for i in list1:
+    if i == "bob":
+        break
+    print(i)
+else:
+    print("done") 
 
 # while-else
 print("\nChecking if 15 is prime:")
