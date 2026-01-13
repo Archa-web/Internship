@@ -543,6 +543,10 @@ print(f"Squared: {squared}")
 doubled = list(map(lambda x: x * 2, numbers))
 print(f"Doubled: {doubled}")
 
+# combining map() and filter()
+mul_of_3 = list(filter(lambda x: x % 3 == 0, list(map(lambda x: x * 2, numbers))))
+print(f"Multiples of 3 after doubling: {mul_of_3}")                 # [6]
+
 # filter() - filters items based on condition
 def is_even(x):
     return x % 2 == 0
