@@ -318,7 +318,7 @@ def divide_with_finally(a, b):
         print("Cleanup completed\n")
 
 print("Test 1 (Success):")
-divide_with_finally(10, 2)
+print(divide_with_finally(10, 2))
 
 print("Test 2 (Error):")
 divide_with_finally(10, 0)
